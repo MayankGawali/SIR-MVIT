@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="vote.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url("Sky.jpeg");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div {
+        width: 500px;
+        height: 500px;
+        backdrop-filter: blur(10px);
+        border: 1px solid black;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      button {
+        color: aliceblue;
+        background-color: green;
+      }
+    </style>
+    <div>
+      <div>
+        <h1 style="text-align: center">Vote Validator</h1>
+        <table>
+          <tr>
+            <th style="font-size: larger"><label for="Name">Name</label></th>
+            <th style="font-size: larger"><label for="Age">Age</label></th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                name=""
+                id="name"
+                placeholder="Enter your name"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                name=""
+                id="age"
+                placeholder="Enter your age"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button onclick="vote()" type="submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+        <p id="par"></p>
+        
+      </div>
+    </div>
+
+    <script src="vote.js"></script>
+  </body>
+</html>

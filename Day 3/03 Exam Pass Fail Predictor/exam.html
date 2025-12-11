@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Exam Pass Fail Predictor</h1>
+        <table>
+          <tr>
+            <td>
+              <label class="large" for="">Name</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input class="large" type="text" name="" id="name" placeholder="Enter Your Name">
+            </td>
+            
+          </tr>
+        </table>
+        
+        <p id="result"></p>
+        <button onclick="exam()" type="submit">submit</button>
+    </div>
+
+    <script>
+        function exam(){
+            var name = document.getElementById("name").value;
+            var marks = Math.floor(Math.random()*101);
+            var resultText = "";
+            var resultClass = "";
+
+            if(marks<35){
+              resultText = name+" has FAILED the exam.";
+              resultClass = "fail";
+            }else{
+              resultClass = "pass";
+
+                if (marks>=75){
+                  resultText = name+" PASSED with Distinction";
+                }
+
+                else if (marks>=60){
+                  resultText = name+" PASSED with First Class";
+                }
+
+                else if (marks>=50){
+                  resultText = name+" PASSED with Second Class";
+                }
+
+                else {
+                  resultText = name+" PASSED (Just Passed)";
+                }
+            }
+
+            var resultPara = document.getElementById("result");
+            resultPara.innerHTML = resultText;
+            resultPara.className = resultClass;
+        }
+    </script>
+</body>
+</html>

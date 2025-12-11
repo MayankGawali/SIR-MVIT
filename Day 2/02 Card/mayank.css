@@ -1,0 +1,16 @@
+.box1{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 10px;
+}
+
+.box2{
+    height: 640;
+    width: 360;
+    background-color: rgb(82, 174, 255);
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid black;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnership Predictor</title>
+    <link rel="stylesheet" href="love.css">
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Partnership Predictor</h1>
+        <table>
+          <tr>
+            <td>
+              <label class="large" for="">Partner 1</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input class="large" type="text" name="" id="partner1" placeholder="Enter Partner 1 Name">
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <label class="large" for="">Partner 2</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input class="large" type="text" name="" id="partner2" placeholder="Enter Partner 2 Name">
+            </td>
+          </tr>
+        </table>
+        
+        <p id="result"></p>
+        <button onclick="predictMarriage()" type="submit">Predict Compatibility</button>
+    </div>
+
+    <script>
+        function predictMarriage(){
+            var name1 = document.getElementById("partner1").value;
+            var name2 = document.getElementById("partner2").value;
+
+            var predictionIndex = Math.floor(Math.random()*100); 
+            var resultText = "";
+            var resultClass = "";
+
+            var names = name1 + " & " + name2;
+
+            if(predictionIndex < 20){
+              resultText = names + ": Not meant to be together.";
+              resultClass = "not_meant";
+            } 
+            
+            else if (predictionIndex < 40){
+              resultText = names + ": Chances are low.";
+              resultClass = "chances_low";
+            } 
+            
+            else if (predictionIndex < 60){
+              resultText = names + ": May have a chance.";
+              resultClass = "may_chance";
+            } 
+            
+            else if (predictionIndex < 80){
+              resultText = names + ": Marriage is possible.";
+              resultClass = "possible";
+            } 
+            
+            else {
+              resultText = names + ": Meant to be together!";
+              resultClass = "meant_to_be";
+            }
+
+            var resultPara = document.getElementById("result");
+            resultPara.innerHTML = resultText;
+            resultPara.className = resultClass;
+        }
+    </script>
+</body>
+</html>

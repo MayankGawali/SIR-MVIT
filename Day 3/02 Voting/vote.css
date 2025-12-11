@@ -1,0 +1,19 @@
+
+
+h1{
+    font-size: 40;
+}
+
+td{
+    font-size: large;
+}
+body{
+    padding: 0;
+    height: 100hv;
+}
+
+table{
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}

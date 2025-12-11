@@ -1,0 +1,65 @@
+body {
+    background-image: url("6525736.jpg");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0; 
+}
+
+div {
+    height: 60vh;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(255, 89, 155);
+}
+
+table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button{
+    color: black;
+    background-color: pink;
+}
+
+.large {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.not_meant {
+    color: rgb(255, 0, 0);
+    background-color: black;
+    font-weight: bold;
+}
+
+.chances_low {
+    color: rgb(255, 131, 37);
+    background-color: black;
+    font-weight: bold;
+}
+
+.may_chance {
+    color: rgb(255, 221, 0);
+    background-color: black;
+    font-weight: bold;
+}
+
+.possible {
+    color: rgb(0, 255, 204);
+    background-color: black;
+    font-weight: bold;
+}
+
+.meant_to_be {
+    color: rgb(0, 255, 0);
+    background-color: black;
+    font-weight: bold;
+}
