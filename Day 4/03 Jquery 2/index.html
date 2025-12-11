@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h2>TO-DO Manager</h2>
-    <input type="text" id="task" placeholder="Enter the task" />
-    <button id="add">Add</button>
-    <ul id="tasklist"></ul>
+    <div>
+      <h2>TO-DO Manager</h2>
+      <input type="text" id="task" placeholder="Enter the task" />
+      <button id="add">Add</button>
+      <ul style="text-align: left;" id="tasklist"></ul>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <style>
       body{
+        background-color: rgb(255, 171, 230);
         margin: 0;
         display: flex;
         justify-content: center;
